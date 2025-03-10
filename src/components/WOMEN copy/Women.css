@@ -1,0 +1,20 @@
+.categories {
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 2rem;
+  margin: 20px;
+}
+.topics {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+}
+.cat {
+  position: absolute;
+  max-width: 170px;
+  height: 150px;
+  margin: 20px;
+  object-fit: cover;
+}

@@ -1,0 +1,19 @@
+.contact {
+  width: 290px;
+  height: 55px;
+  border: #106944 3px solid;
+  margin: 20px;
+  border-radius: 20px;
+  background-color: antiquewhite;
+  color: #106944;
+  padding: 5px;
+  font-weight: 100px;
+}
+.maincontact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact h3 {
+  font-size: 16px;
+}

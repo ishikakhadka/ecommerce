@@ -1,0 +1,28 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+.abt {
+  display: flex;
+  justify-content: space-around;
+}
+.abot {
+  max-width: 300px;
+  height: auto;
+  border-radius: 25%;
+  margin: 10px;
+  display: flex;
+}
+.about {
+  padding: 15px;
+  margin: 10px;
+  border-radius: 30px;
+  background-color: antiquewhite;
+  border: #106944 3px solid;
+  color: #106944;
+  font-size: 20px;
+  font-weight: 100px;
+}
+
+.abus {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}

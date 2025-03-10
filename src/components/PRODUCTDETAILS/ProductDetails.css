@@ -1,0 +1,36 @@
+.details img {
+  width: 220px;
+  height: auto;
+  object-fit: cover;
+}
+.details {
+  border: #f9f9f9 3px solid;
+  padding: 10px;
+}
+.left {
+  display: flex;
+  flex-direction: column;
+}
+.subimg img {
+  width: 70px;
+}
+.dets {
+  background-color: chocolate;
+  color: aliceblue;
+  border: none;
+  border-radius: 10px;
+}
+.info1 {
+  background-color: rgb(3, 118, 141);
+  color: aliceblue;
+  border: none;
+  font-size: 20px;
+  padding: 5px;
+  border-radius: 5px;
+}
+.star i {
+  color: #d19305;
+}
+.right {
+  padding: auto;
+}
