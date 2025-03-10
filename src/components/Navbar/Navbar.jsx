@@ -3,8 +3,8 @@ import { Link } from "react-router";
 
 const Navbar = () => {
   return (
-    <div>
-      <div className="nav">
+    <>
+      <div className="navbar-content">
         <div>
           <i class="bi bi-flower3 log">
             <span class="logo">Thrift & Thread</span>
@@ -47,7 +47,7 @@ const Navbar = () => {
           <button className="btnnn">LOGIN NOW</button>
         </Link>
       </div>
-    </div>
+    </>
   );
 };
 

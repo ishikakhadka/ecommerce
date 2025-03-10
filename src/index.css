@@ -9,22 +9,22 @@ body {
   margin: 0;
   padding: 0;
 }
-.nav {
+.navbar-content {
   display: flex;
-  align-items: center; /* Centers the items vertically */
-  padding: 5px; /* Adds padding around the content */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Adds shadow to the navbar */
+  align-items: center;
+  padding: 5px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   color: rgb(77, 54, 29);
   justify-content: center;
   gap: 5px;
 }
-.left {
-  display: flex;
-}
+/* .left { */
+/* display: flex;
+} */
 .list {
   display: flex;
   justify-content: center;
-  gap: 3rem;
+  gap: 2rem;
   padding-top: 20px;
 }
 ul {
