@@ -5,49 +5,14 @@ import Image2 from "./image2.png";
 import kids from "./kids.png";
 import Popular from "../POPULAR/Popular";
 import Kids from "../KIDS copy/Kids";
+import { Link } from "react-router";
+import Navbar from "../Navbar/Navbar";
 
 const Home = () => {
   return (
     <div>
-      <div className="nav">
-        <div>
-          <i class="bi bi-flower3 log">
-            <span class="logo">Thrift & Thread</span>
-          </i>
-        </div>
-        <div>
-          <ul className="list">
-            <li>HOME</li>
-            <a href="/about">
-              <li>ABOUT</li>
-            </a>
-
-            <a href="/men">
-              <li>MEN</li>
-            </a>
-            <a href="/women">
-              <li>WOMEN</li>
-            </a>
-            <a href="/kids">
-              <li>KIDS</li>
-            </a>
-            <a href="/contact">
-              <li>CONTACT US</li>
-            </a>
-          </ul>
-        </div>
-        <div className="icons">
-          <a href="/cart">
-            <i class="bi bi-cart-check"></i>
-          </a>
-          <i class="bi bi-heart"></i>
-        </div>
-        <a href="/login">
-          <button className="btnnn">LOGIN NOW</button>
-        </a>
-      </div>
       <div class="intro">
-        <a href="/men">
+        <Link to="/men">
           <div
             style={{
               width: "220px", // width of the circle
@@ -58,8 +23,8 @@ const Home = () => {
           >
             <img className="img" src={Image} />
           </div>
-        </a>
-        <a href="/kids">
+        </Link>
+        <Link to="/kids">
           <div
             style={{
               width: "250px", // width of the circle
@@ -70,9 +35,9 @@ const Home = () => {
           >
             <img className="img" src={kids} />
           </div>
-        </a>
+        </Link>
 
-        <a href="/women">
+        <Link to="/women">
           <div
             style={{
               width: "220px", // width of the circle
@@ -83,7 +48,7 @@ const Home = () => {
           >
             <img className="img" src={Image2} />
           </div>
-        </a>
+        </Link>
       </div>
       <div>
         <Popular />

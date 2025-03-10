@@ -9,38 +9,11 @@ import { Formik } from "formik";
 import React from "react";
 import * as yup from "yup";
 import "./Login.css";
+import { Link } from "react-router";
 
 const Login = () => {
   return (
     <div>
-      <div className="nav">
-        <div>
-          <i class="bi bi-flower3 log">
-            <span class="logo">Thrift & Thread</span>
-          </i>
-        </div>
-        <div>
-          <ul className="list">
-            <a href="/">
-              <li>HOME</li>
-            </a>
-
-            <a href="/about">
-              <li>ABOUT</li>
-            </a>
-
-            <a href="/men">
-              <li>MEN</li>
-            </a>
-            <a href="/women">
-              <li>WOMEN</li>
-            </a>
-            <a href="/contact">
-              <li>CONTACT US</li>
-            </a>
-          </ul>
-        </div>
-      </div>
       <div className="login-hero">
         <Formik
           initialValues={{
@@ -103,9 +76,9 @@ const Login = () => {
                 </FormControl>
                 <div className="login">
                   <p className="text">Don't have an account?</p>
-                  <a href="/register">
+                  <Link to="/register">
                     <p className="text">REGISTER HERE.</p>
-                  </a>
+                  </Link>
                   <p className="text">OR</p>
                   <p className="text">LOG IN WITH:</p>
                   <div>

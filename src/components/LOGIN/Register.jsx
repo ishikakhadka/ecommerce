@@ -1,6 +1,7 @@
 import React from "react";
 import { Formik } from "formik";
 import * as yup from "yup";
+import "./Register.css";
 import {
   Button,
   FormControl,
@@ -46,46 +47,48 @@ const Register = () => {
     >
       {(formik) => {
         return (
-          <form
-            onSubmit={formik.handleSubmit}
-            style={{
-              boxShadow: " rgba(0, 0, 0, 0.35) 0px 5px 15px",
-              padding: "1rem",
-              display: "flex",
-              flexDirection: "column",
-              justifyContent: "center",
-              alignItems: "center",
-              gap: "1rem",
-              width: "350px",
-            }}
-          >
-            <Typography variant="h4">Register</Typography>
-            <FormControl fullWidth>
-              <TextField
-                label="First Name"
-                {...formik.getFieldProps("FirstName")}
-              />
+          <div className="register-form">
+            <form
+              className="register-form"
+              onSubmit={formik.handleSubmit}
+              style={{
+                boxShadow: " rgba(0, 0, 0, 0.35) 0px 5px 15px",
+                padding: "1rem",
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "center",
+                alignItems: "center",
+                gap: "1rem",
+                width: "350px",
+              }}
+            >
+              <Typography variant="h4">Register</Typography>
+              <FormControl fullWidth>
+                <TextField
+                  label="First Name"
+                  {...formik.getFieldProps("FirstName")}
+                />
 
-              {formik.touched.FirstName && formik.errors.FirstName ? (
-                <FormHelperText sx={{ fontSize: "1rem" }} error>
-                  {formik.errors.FirstName}
-                </FormHelperText>
-              ) : null}
-            </FormControl>
-            <FormControl fullWidth>
-              <TextField
-                label="Last Name"
-                {...formik.getFieldProps("LastName")}
-              />
+                {formik.touched.FirstName && formik.errors.FirstName ? (
+                  <FormHelperText sx={{ fontSize: "1rem" }} error>
+                    {formik.errors.FirstName}
+                  </FormHelperText>
+                ) : null}
+              </FormControl>
+              <FormControl fullWidth>
+                <TextField
+                  label="Last Name"
+                  {...formik.getFieldProps("LastName")}
+                />
 
-              {formik.touched.LastName && formik.errors.LastName ? (
-                <FormHelperText sx={{ fontSize: "1rem" }} error>
-                  {formik.errors.LastName}
-                </FormHelperText>
-              ) : null}
-            </FormControl>
-            {/* <FormControl> */
-            /* <DatePicker
+                {formik.touched.LastName && formik.errors.LastName ? (
+                  <FormHelperText sx={{ fontSize: "1rem" }} error>
+                    {formik.errors.LastName}
+                  </FormHelperText>
+                ) : null}
+              </FormControl>
+              {/* <FormControl> */
+              /* <DatePicker
                 label="DOB"
                 value={formik.values.dob}
                 onChange={(newValue) => setValue(newValue)}
@@ -97,38 +100,39 @@ const Register = () => {
               ) : null}
             </FormControl> */}
 
-            <FormControl fullWidth>
-              <TextField label="Email" {...formik.getFieldProps("email")} />
+              <FormControl fullWidth>
+                <TextField label="Email" {...formik.getFieldProps("email")} />
 
-              {formik.touched.email && formik.errors.email ? (
-                <FormHelperText sx={{ fontSize: "1rem" }} error>
-                  {formik.errors.email}
-                </FormHelperText>
-              ) : null}
-            </FormControl>
+                {formik.touched.email && formik.errors.email ? (
+                  <FormHelperText sx={{ fontSize: "1rem" }} error>
+                    {formik.errors.email}
+                  </FormHelperText>
+                ) : null}
+              </FormControl>
 
-            <FormControl fullWidth>
-              <TextField
-                label="Password"
-                {...formik.getFieldProps("password")}
-              />
+              <FormControl fullWidth>
+                <TextField
+                  label="Password"
+                  {...formik.getFieldProps("password")}
+                />
 
-              {formik.touched.password && formik.errors.password ? (
-                <FormHelperText sx={{ fontSize: "1rem" }} error>
-                  {formik.errors.password}
-                </FormHelperText>
-              ) : null}
-            </FormControl>
+                {formik.touched.password && formik.errors.password ? (
+                  <FormHelperText sx={{ fontSize: "1rem" }} error>
+                    {formik.errors.password}
+                  </FormHelperText>
+                ) : null}
+              </FormControl>
 
-            <Button
-              fullWidth
-              variant="contained"
-              color="secondary"
-              type="submit"
-            >
-              submit
-            </Button>
-          </form>
+              <Button
+                fullWidth
+                variant="contained"
+                color="secondary"
+                type="submit"
+              >
+                submit
+              </Button>
+            </form>
+          </div>
         );
       }}
     </Formik>

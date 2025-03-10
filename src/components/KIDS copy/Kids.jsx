@@ -9,43 +9,6 @@ import "./Kids.css";
 const Kids = () => {
   return (
     <div>
-      <div className="nav">
-        <div>
-          <i class="bi bi-flower3 log">
-            <span class="logo">Thrift & Thread</span>
-          </i>
-        </div>
-        <div>
-          <ul className="list">
-            <a href="/about">
-              <li>ABOUT</li>
-            </a>
-
-            <a href="/men">
-              <li>MEN</li>
-            </a>
-            <a href="/women">
-              <li>WOMEN</li>
-            </a>
-            <a href="/kids">
-              <li>KIDS</li>
-            </a>
-            <a href="/contact">
-              <li>CONTACT US</li>
-            </a>
-          </ul>
-        </div>
-        <div className="icons">
-          <a href="/">
-            <i class="bi bi-house"></i>
-          </a>
-
-          <a href="/cart">
-            <i class="bi bi-cart-check"></i>
-          </a>
-          <i class="bi bi-heart"></i>
-        </div>
-      </div>
       {/* <div className="search">
           <div>
             <input

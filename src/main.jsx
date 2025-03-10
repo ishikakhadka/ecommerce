@@ -12,9 +12,11 @@ import ProductDetails from "./components/PRODUCTDETAILS/ProductDetails";
 import Cart from "./components/CART/Cart";
 import Kids from "./components/KIDS copy/Kids";
 import Register from "./components/LOGIN/Register";
+import Navbar from "./components/Navbar/Navbar";
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <BrowserRouter>
+      <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/men" element={<Men />} />
