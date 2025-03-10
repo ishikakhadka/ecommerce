@@ -15,7 +15,8 @@ body {
   padding: 5px; /* Adds padding around the content */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Adds shadow to the navbar */
   color: rgb(77, 54, 29);
-  justify-content: space-around;
+  justify-content: center;
+  gap: 5px;
 }
 .left {
   display: flex;
