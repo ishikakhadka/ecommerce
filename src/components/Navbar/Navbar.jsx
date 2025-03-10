@@ -38,14 +38,14 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="icons">
-          <a href="/cart">
+          <Link to="/cart">
             <i class="bi bi-cart-check"></i>
-          </a>
+          </Link>
           <i class="bi bi-heart"></i>
         </div>
-        <a href="/login">
+        <Link to="/login">
           <button className="btnnn">LOGIN NOW</button>
-        </a>
+        </Link>
       </div>
     </div>
   );
